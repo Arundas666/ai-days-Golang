@@ -1,0 +1,35 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	slice1 := []int{4, 2, 6, 8, 2}
+	slice2 := []int{1, 2, 4, 5, 6}
+
+	result, err := MergeAndSortUnique(slice1, slice2)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(result)
+	}
+}
+
+func MergeAndSortUnique(slice1, slice2 []int) ([]int, error) {
+	merged := append(slice1, slice2...)
+
+	unique := make(map[int]bool)
+	for _, val := range merged {
+		unique[val] = true
+	}
+
+	var result []int
+	for key := range unique {
+		result = append(result, key)
+	}
+
+	sort.Ints(result)
+
+	return result, nil
+}
