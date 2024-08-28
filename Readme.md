@@ -55,3 +55,15 @@ go mod tidy
 - Code Explanation: Enter 5 to get a brief explanation of your Go code.
 - Commit Message Generation: Enter 6 to generate a commit message for your Go code.
 - Code Optimization: Enter 7 to optimize your Go code.
+
+### Example
+- After running the program, if you select option 1 (Unit Test Generation), the program will generate a unit test for your code and save it as a_test.go.
+
+### File Outputs
+- Unit Tests: Saved as a_test.go
+- Code Explanation: Saved as output.txt
+- Other Options: The modified or generated code will be saved back into code.go.
+
+
+### Contributing
+- Feel free to submit issues or pull requests if you find any bugs or have suggestions for improvements.
