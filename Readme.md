@@ -67,3 +67,6 @@ go mod tidy
 
 ### Contributing
 - Feel free to submit issues or pull requests if you find any bugs or have suggestions for improvements.
+
+### Contact
+- If you have any questions or need further assistance, please contact arundas285@gmail.com.
